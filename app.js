@@ -4,6 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
 const morgan = require("morgan");
+const body_parser = require("body-parser");
 require("./Data_Base_Related_Information/Mongodb_Connection");
 dotenv.config({ path: "./.env" });
 
@@ -13,6 +14,8 @@ app.use(cors());
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("tiny"));
+app.use(express.urlencoded(true));
+app.use(body_parser.json());
 
 app.use("/users", require("./Controller_For_Call_APIs/User_Controller"));
 app.use("/guests", require("./Controller_For_Call_APIs/Guest_Controller"));
