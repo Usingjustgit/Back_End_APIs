@@ -1,0 +1,43 @@
+const dummy = [
+  {
+    product_name: "Table Cloth 54x54 White",
+    description: "Appetizer - Southwestern",
+    richdescription: "Bread - Corn Muffaleta Onion",
+    company: "Flipstorm",
+    price: "293",
+    weight: 31,
+    color: "#a67c3f",
+    category: "Prefabricated Aluminum Metal Canopies",
+    subcategory_name: "Chinese Lemon Pork",
+    countInStock: 4,
+    isFeatured: false,
+  },
+  {
+    product_name: "Scallops - In Shell",
+    description: "Juice Peach Nectar",
+    richdescription: "Cream - 18%",
+    company: "Dabvine",
+    price: "58",
+    weight: 1,
+    color: "#8c662f",
+    category: "Doors, Frames & Hardware",
+    subcategory_name: "Soup - Campbells Chili Veg",
+    countInStock: 29,
+    isFeatured: true,
+  },
+  {
+    product_name: "Rice - Jasmine Sented",
+    description: "Veal - Brisket, Provimi, Bone - In",
+    richdescription: "Mushroom - Enoki, Fresh",
+    company: "Thoughtbeat",
+    price: "24",
+    weight: 20,
+    color: "#72a044",
+    category: "Masonry & Precast",
+    subcategory_name: "Chevere Logs",
+    countInStock: 91,
+    isFeatured: true,
+  },
+];
+
+module.exports = dummy;

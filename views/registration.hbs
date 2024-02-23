@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{! <link rel="stylesheet" href="styles.css" /> }}
+    <style>
+      body { top: 10%; left: 45%; right: 0; bottom: 0; height: 100vh;
+      font-family: Arial, sans-serif; background-color: #f4f4f4; display:
+      inline-block; justify-content: center; align-items: center; height: 100vh;
+      margin: 0; } .registration-container { left: 41%; margin-right: 41%;
+      width: 90%; background-color: #ffffff; padding: 20px; border: 1px solid
+      #e1e1e1; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; }
+      .form-group { margin-bottom: 20px; } label { display: block;
+      margin-bottom: 5px; } input[type="text"], input[type="email"],
+      input[type="password"], input[type="date"] { width: 100%; padding: 10px;
+      border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+      button { padding: 10px 20px; background-color: #007bff; color: #ffffff;
+      border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+    <title>User Registration</title>
+  </head>
+  <body>
+    <div class="registration-container">
+      <h2>User Registration</h2>
+      <form action="/registration" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="birth_date">Birth Date:</label>
+          <input type="date" id="birth_date" name="birth_date" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required />
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div class="form-group">
+          <label for="district">District:</label>
+          <input type="text" id="district" name="district" required />
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" name="zip" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
