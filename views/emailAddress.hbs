@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{! <link rel="stylesheet" href="styles.css"> }}
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4; display:
+      flex; justify-content: center; align-items: center; height: 100vh; margin:
+      0; } .success-container { background-color: #ffffff; padding: 20px;
+      border: 1px solid #e1e1e1; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center; } a { display: inline-block; margin-top: 20px;
+      padding: 10px 20px; background-color: #007bff; color: #ffffff;
+      text-decoration: none; border-radius: 5px; }
+    </style>
+    <title>Error</title>
+  </head>
+  <body>
+    <div class="success-container">
+      <h2 style="color: red;">Error!</h2>
+      <p>You email {{email}} is already exist.</p>
+      <a href="/index/login">Go Login</a>
+    </div>
+  </body>
+</html>

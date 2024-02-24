@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{! <link rel="stylesheet" href="styles.css"> }}
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4; display:
+      flex; justify-content: center; align-items: center; height: 100vh; margin:
+      0; } .login-container { width:301px; background-color: #ffffff; padding:
+      20px; border: 1px solid #e1e1e1; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center; } .form-group { margin-bottom: 20px; } label {
+      display: block; margin-bottom: 5px; } input{ width: 100%; padding: 10px;
+      border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+      button { padding: 10px 20px; background-color: #007bff; color: #ffffff;
+      border: none; border-radius: 5px; cursor: pointer; } a {display: block;
+      text-align: right; margin-top: 21px;}
+    </style>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Add Cart Product</h2>
+      <form action="/cart/product/add_to_cart/{{product_id}}" method="POST">
+        <div class="form-group">
+          <label for="email">Product:</label>
+          <input
+            type="text"
+            id="email"
+            value="{{product_id}}"
+            name="product"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Quantity:</label>
+          <input
+            type="number"
+            id="password"
+            name="quantity"
+            value="1"
+            required
+          />
+        </div>
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+  </body>
+</html>
